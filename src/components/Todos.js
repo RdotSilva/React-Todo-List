@@ -3,8 +3,9 @@ import TodoItem from './TodoItem';
 
 class Todos extends Component {
   render() {
+      console.log(this)
     return this.props.todos.map(todo => (
-        <TodoItem />
+        <TodoItem key={todo.id} todo={todo} />
     ));
   }
 }
