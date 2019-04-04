@@ -32,10 +32,12 @@ class App extends Component {
     }) });
   }
 
+ 
+
   render() {
     return (
       <div className="App">
-        <Todos todos={this.state.todos} markComplete={this.markComplete} />
+        <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
       </div>
     );
   }
