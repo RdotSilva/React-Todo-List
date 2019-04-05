@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/layout/Header";
 import Todos from "./components/Todos";
 import AddTodo from "./components/AddTodo";
+import uuid from 'uuid';
 
 class App extends Component {
 	state = {
