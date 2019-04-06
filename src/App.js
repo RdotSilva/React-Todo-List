@@ -39,6 +39,7 @@ class App extends Component {
 		);
 	};
 
+	// Add Todo
 	addTodo = title => {
 		axios
 			.post("https://jsonplaceholder.typicode.com/todos", {
